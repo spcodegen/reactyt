@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
-  return <div>this is a Dashboard</div>;
+  return (
+    <div>
+      <div>this is a Dashboard</div>
+    </div>
+  );
 }
 
 export default Dashboard;
