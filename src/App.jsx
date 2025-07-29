@@ -7,6 +7,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Nav from "./Nav";
 import Profile from "./pages/Profile";
 import Setting from "./pages/Setting";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/products/:id" element={<Products />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="profile" element={<Profile />} />
           <Route path="setting" element={<Setting />} />
